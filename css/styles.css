@@ -192,11 +192,24 @@ Navbar
   max-width: 1170px;
   margin: 0 auto;
 }
+.nav-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.name span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 .nav-header {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 0.2fr 1fr 1fr;
   align-items: center;
 }
+
 .nav-btn {
   background: transparent;
   border-color: transparent;
@@ -205,7 +218,7 @@ Navbar
   cursor: pointer;
   justify-self: end;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .nav {
     background: var(--clr-primary-10);
   }
@@ -234,6 +247,15 @@ Navbar
     grid-template-columns: auto 1fr;
     align-items: center;
   }
+  .nav-header {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    align-items: center;
+  }
+  /* .name span {
+    font-size: 2rem;
+    font-weight: bold;
+  } */
 }
 .navbar-fixed {
   position: fixed;
@@ -508,3 +530,29 @@ Projects
     grid-area: d;
   }
 }
+/*
+=============== 
+Skills
+===============
+*/
+@media screen and (min-width: 768px) {
+  .skills-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+.skills {
+  background: var(--clr-primary-10);
+}
+
+/*
+=============== 
+Skills
+===============
+*/
+/*
+=============== 
+Skills
+===============
+*/
